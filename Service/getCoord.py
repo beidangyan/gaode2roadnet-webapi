@@ -1,12 +1,13 @@
 import requests
 import xml.etree.ElementTree as ET
 import json
+import config
 
 global key
 global drivingUrl
-key = '9b4e518115da0b6534ae3abf1edc0186'
+key = config.GAODE_KEY
 drivingUrl = 'https://restapi.amap.com/v3/direction/driving?origin={}&destination={}&roadaggregation=true&extension=all&output=json&key=' + key
-print(drivingUrl)
+# print(drivingUrl)
 
 
 def getDP(origin: list, destination: list) -> list:
