@@ -18,4 +18,4 @@ DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(USERNAME, PASSWORD
 SQLALCHEMY_DATABASE_URI = DB_URI
 GAODE_KEY = 'YOUR_KEY' # 把这里换成高德导航的webapi的key
 ```
-3.运行app.py
+3.运行app.py，可与[前端](https://github.com/beidangyan/gaode2roadnet-front)搭配使用。
