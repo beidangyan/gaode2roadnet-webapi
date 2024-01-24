@@ -10,10 +10,10 @@ flask db upgrade
 2.在根路径下新建配置数据库的config.py文件
 ```
 HOST = '127.0.0.1' # 数据库主机地址
-PORT = '3306' # 数据库端口
-DATABASE = 'road_db' # 数据库名称
-USERNAME = 'root' # 数据库用户名
-PASSWORD = '!mysql789' # 数据库密码
+PORT = '' # 数据库端口
+DATABASE = '' # 数据库名称
+USERNAME = '' # 数据库用户名
+PASSWORD = '' # 数据库密码
 DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(USERNAME, PASSWORD, HOST, PORT, DATABASE)
 SQLALCHEMY_DATABASE_URI = DB_URI
 GAODE_KEY = 'YOUR_KEY' # 把这里换成高德导航的webapi的key
