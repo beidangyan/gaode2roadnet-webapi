@@ -6,7 +6,8 @@ import config
 global key
 global drivingUrl
 key = config.GAODE_KEY
-drivingUrl = 'https://restapi.amap.com/v3/direction/driving?origin={}&destination={}&roadaggregation=true&extension=all&output=json&key=' + key
+drivingUrl = ('https://restapi.amap.com/v3/direction/driving?origin={}&destination={}&origin_type=3\
+              &roadaggregation=true&extension=all&output=json&key=' + key)
 # print(drivingUrl)
 
 
@@ -51,6 +52,7 @@ def getRoadObj(OR: list, DE: list) -> dict:
 
     This method is used to get the road object from a single Highlander navigation request.
     '''
+
     roadstep = getDP(OR, DE)  # 通过高德api获取规划信息
     roadNum = len(roadstep)  # 获取规划涉及道路数量
     # roadstep[roadNum - 1]['steps']
